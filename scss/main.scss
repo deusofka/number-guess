@@ -1,0 +1,107 @@
+// Variables
+$light-color: #fff;
+$light-color-sc: #ddd;
+$dark-color: #191919;
+$dark-color-sc: #222;
+
+$theme-color: red;
+$theme-color-sc: green;
+$theme-color-tr: #4444ff;
+
+// General
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+// Styling
+body {
+  width: fit-content;
+  // max-width: 500px;
+  margin: auto;
+  background-color: $dark-color;
+  color: $light-color;
+  height: 80vh;
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin: auto;
+    margin-top: 2.5%;
+    height: inherit;
+
+    section {
+      padding: 0.5rem;
+      height: inherit;
+
+      h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+      }
+
+      p {
+        margin-bottom: 0.25rem;
+        font-size: 1.45rem;
+      }
+
+      input {
+        width: 12rem;
+        font-size: 1.45rem;
+        color: white;
+        background-color: inherit;
+        outline: none;
+        border: solid $light-color 1px;
+        border-radius: 1px;
+        padding: 0.125rem 0.5rem;
+        margin-right: 0.125rem;
+      }
+
+      button {
+        font-size: 1.45rem;
+        padding: 0.125rem 0.25rem;
+        border: none;
+        background-color: $light-color;
+        &:nth-of-type(2) {
+          display: none;
+        }
+      }
+
+      p.message {
+        width: initial;
+        padding: 0;
+        font-size: 1.65rem;
+        color: $theme-color-tr;
+        margin-top: 0rem;
+        text-align: initial;
+        &.double-digit {
+          font-size: 1.6rem;
+        }
+      }
+      p.win {
+        width: initial;
+        padding: 0;
+        font-size: 2.425rem;
+        color: $theme-color-sc;
+        margin-top: 0rem;
+        text-align: initial;
+        &.double-digit {
+          font-size: 2.3rem;
+        }
+      }
+      p.loss {
+        // width: 18rem;
+        padding: 0;
+        font-size: 2.225rem;
+        color: $theme-color;
+        margin-top: 0rem;
+        // text-align: justify;
+      }
+    }
+  }
+}

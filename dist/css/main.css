@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200; }
+
+body {
+  width: fit-content;
+  margin: auto;
+  background-color: #191919;
+  color: #fff;
+  height: 80vh; }
+  body main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin: auto;
+    margin-top: 2.5%;
+    height: inherit; }
+    body main section {
+      padding: 0.5rem;
+      height: inherit; }
+      body main section h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 3rem; }
+      body main section p {
+        margin-bottom: 0.25rem;
+        font-size: 1.45rem; }
+      body main section input {
+        width: 12rem;
+        font-size: 1.45rem;
+        color: white;
+        background-color: inherit;
+        outline: none;
+        border: solid #fff 1px;
+        border-radius: 1px;
+        padding: 0.125rem 0.5rem;
+        margin-right: 0.125rem; }
+      body main section button {
+        font-size: 1.45rem;
+        padding: 0.125rem 0.25rem;
+        border: none;
+        background-color: #fff; }
+        body main section button:nth-of-type(2) {
+          display: none; }
+      body main section p.message {
+        width: initial;
+        padding: 0;
+        font-size: 1.65rem;
+        color: #4444ff;
+        margin-top: 0rem;
+        text-align: initial; }
+        body main section p.message.double-digit {
+          font-size: 1.6rem; }
+      body main section p.win {
+        width: initial;
+        padding: 0;
+        font-size: 2.425rem;
+        color: green;
+        margin-top: 0rem;
+        text-align: initial; }
+        body main section p.win.double-digit {
+          font-size: 2.3rem; }
+      body main section p.loss {
+        padding: 0;
+        font-size: 2.225rem;
+        color: red;
+        margin-top: 0rem; }
