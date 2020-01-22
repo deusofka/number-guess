@@ -28,8 +28,8 @@ submit.addEventListener("click", function(e) {
 
   if (Number(input.value) === random) {
     para.className = "win";
-    if (input.value > 9) {
-      para.className = "win double-digit";
+    if (input.value < 10) {
+      para.className = "win single-digit";
     }
     gameOver(`${random} is correct, YOU WIN!`, `green`);
     console.log("You Win");
@@ -43,8 +43,8 @@ submit.addEventListener("click", function(e) {
   } else {
     // Show message
     para.className = "message";
-    if (input.value > 9) {
-      para.className = "message double-digit";
+    if (input.value < 10) {
+      para.className = "message single-digit";
     }
     para.innerHTML = `${input.value} is not correct, ${3 - count} guesses left`;
     count++;
