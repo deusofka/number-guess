@@ -3,6 +3,7 @@ $light-color: #fff;
 $light-color-sc: #ddd;
 $dark-color: #191919;
 $dark-color-sc: #222;
+$disabled-color: #ffffff80;
 
 $theme-color: red;
 $theme-color-sc: green;
@@ -61,6 +62,10 @@ body {
         border-radius: 1px;
         padding: 0.125rem 0.5rem;
         margin-right: 0.125rem;
+
+        &:disabled {
+          background-color: $disabled-color;
+        }
       }
 
       button {

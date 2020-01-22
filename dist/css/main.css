@@ -39,6 +39,8 @@ body {
         border-radius: 1px;
         padding: 0.125rem 0.5rem;
         margin-right: 0.125rem; }
+        body main section input:disabled {
+          background-color: #ffffff80; }
       body main section button {
         font-size: 1.45rem;
         padding: 0.125rem 0.25rem;
