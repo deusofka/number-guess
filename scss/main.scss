@@ -50,6 +50,9 @@ body {
       p {
         margin-bottom: 0.25rem;
         font-size: 1.45rem;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
       }
 
       input {

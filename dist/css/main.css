@@ -28,7 +28,10 @@ body {
         font-size: 3rem; }
       body main section p {
         margin-bottom: 0.25rem;
-        font-size: 1.45rem; }
+        font-size: 1.45rem;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out; }
       body main section input {
         width: 12rem;
         font-size: 1.45rem;
