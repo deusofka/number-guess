@@ -46,6 +46,13 @@ body {
         body main section form input:disabled {
           width: 10.3rem;
           background-color: #ffffff80; }
+        body main section form input::placeholder {
+          transition-property: all;
+          transition-duration: 2s;
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          font-size: inherit; }
+        body main section form input.emptyText::placeholder {
+          font-size: 1.9rem; }
       body main section form button {
         font-size: 1.45rem;
         padding: 0.125rem 0.25rem;

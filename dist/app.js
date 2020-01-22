@@ -20,6 +20,11 @@ submit.addEventListener("click", function(e) {
   e.preventDefault();
   console.log(count);
 
+  if (input.value === "") {
+    input.className = "emptyText";
+    return;
+  }
+
   if (0 > input.value || input.value > 10) {
     para.className = "invalid";
     para.innerHTML = `Invalid input. Number must be<br>between 1 and 10`;
@@ -83,4 +88,11 @@ playAgain.addEventListener("click", function(e) {
 
   // Show to play again button
   playAgain.style.display = "none";
+});
+
+/*********************
+    Input Event
+**********************/
+input.addEventListener("click", function() {
+  input.className = "";
 });

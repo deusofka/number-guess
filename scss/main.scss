@@ -71,6 +71,18 @@ body {
             width: 10.3rem;
             background-color: $disabled-color;
           }
+          &::placeholder {
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+            font-size: inherit;
+          }
+
+          &.emptyText {
+            &::placeholder {
+              font-size: 1.9rem;
+            }
+          }
         }
 
         button {
