@@ -45,7 +45,8 @@ body {
         margin-right: 0.125rem; }
         body main section form input:disabled {
           width: 10.3rem;
-          background-color: #ffffff80; }
+          background-color: #ffffff80;
+          cursor: not-allowed; }
         body main section form input::placeholder {
           transition-property: all;
           transition-duration: 2s;
