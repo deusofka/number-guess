@@ -51,7 +51,8 @@ submit.addEventListener("click", function(e) {
     if (input.value < 10) {
       para.className = "message single-digit";
     }
-    para.innerHTML = `${input.value} is not correct, ${3 - count} guesses left`;
+    para.innerHTML = `${Number(input.value)} is not correct, ${3 -
+      count} guesses left`;
     count++;
   }
 });
