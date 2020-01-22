@@ -40,6 +40,7 @@ body {
         padding: 0.125rem 0.5rem;
         margin-right: 0.125rem; }
         body main section input:disabled {
+          width: 10.3rem;
           background-color: #ffffff80; }
       body main section button {
         font-size: 1.45rem;
@@ -60,7 +61,7 @@ body {
       body main section p.win {
         width: initial;
         padding: 0;
-        font-size: 2.425rem;
+        font-size: 2.2rem;
         color: green;
         margin-top: 0rem;
         text-align: initial; }
@@ -69,7 +70,7 @@ body {
       body main section p.loss {
         width: initial;
         padding: 0;
-        font-size: 2.225rem;
+        font-size: 2rem;
         color: red;
         margin-top: 0rem;
         text-align: initial; }

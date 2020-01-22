@@ -57,12 +57,12 @@ function gameOver(msg, color) {
 
   // Show message
   para.innerHTML = msg;
-
+  // setTimeout(() => {
   // Remove submit button
   submit.style.display = "none";
-
   // Show to play again button
   playAgain.style.display = "inline";
+  // }, 2000);
 }
 
 /*********************

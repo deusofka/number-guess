@@ -64,6 +64,7 @@ body {
         margin-right: 0.125rem;
 
         &:disabled {
+          width: 10.3rem;
           background-color: $disabled-color;
         }
       }
@@ -92,7 +93,7 @@ body {
       p.win {
         width: initial;
         padding: 0;
-        font-size: 2.425rem;
+        font-size: 2.2rem;
         color: $theme-color-sc;
         margin-top: 0rem;
         text-align: initial;
@@ -103,7 +104,7 @@ body {
       p.loss {
         width: initial;
         padding: 0;
-        font-size: 2.225rem;
+        font-size: 2rem;
         color: $theme-color;
         margin-top: 0rem;
         text-align: initial;
