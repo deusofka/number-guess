@@ -18,8 +18,13 @@ let para = document.querySelector("p.message");
 **********************/
 submit.addEventListener("click", function(e) {
   e.preventDefault();
-
   console.log(count);
+
+  if (0 > input.value || input.value > 10) {
+    para.className = "invalid";
+    para.innerHTML = `Invalid input. Number must be<br>between 1 and 10`;
+    return;
+  }
 
   if (Number(input.value) === random) {
     para.className = "win";

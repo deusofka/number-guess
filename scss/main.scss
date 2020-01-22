@@ -7,6 +7,7 @@ $dark-color-sc: #222;
 $theme-color: red;
 $theme-color-sc: green;
 $theme-color-tr: #4444ff;
+$theme-color-qt: rgb(255, 145, 0);
 
 // General
 * {
@@ -95,12 +96,20 @@ body {
         }
       }
       p.loss {
-        // width: 18rem;
+        width: initial;
         padding: 0;
         font-size: 2.225rem;
         color: $theme-color;
         margin-top: 0rem;
-        // text-align: justify;
+        text-align: initial;
+      }
+      p.invalid {
+        width: initial;
+        padding: 0;
+        font-size: 1.68rem;
+        color: $theme-color-qt;
+        margin-top: 0rem;
+        text-align: initial;
       }
     }
   }

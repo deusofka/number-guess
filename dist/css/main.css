@@ -65,7 +65,16 @@ body {
         body main section p.win.double-digit {
           font-size: 2.3rem; }
       body main section p.loss {
+        width: initial;
         padding: 0;
         font-size: 2.225rem;
         color: red;
-        margin-top: 0rem; }
+        margin-top: 0rem;
+        text-align: initial; }
+      body main section p.invalid {
+        width: initial;
+        padding: 0;
+        font-size: 1.68rem;
+        color: #ff9100;
+        margin-top: 0rem;
+        text-align: initial; }
