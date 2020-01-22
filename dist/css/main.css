@@ -21,7 +21,8 @@ body {
     height: inherit; }
     body main section {
       padding: 0.5rem;
-      height: inherit; }
+      height: inherit;
+      position: relative; }
       body main section h1 {
         margin: 0;
         margin-bottom: 1rem;
@@ -32,7 +33,7 @@ body {
         transition-property: all;
         transition-duration: 2s;
         transition-timing-function: ease-in-out; }
-      body main section input {
+      body main section form input {
         width: 12rem;
         font-size: 1.45rem;
         color: white;
@@ -42,45 +43,48 @@ body {
         border-radius: 1px;
         padding: 0.125rem 0.5rem;
         margin-right: 0.125rem; }
-        body main section input:disabled {
+        body main section form input:disabled {
           width: 10.3rem;
           background-color: #ffffff80; }
-      body main section button {
+      body main section form button {
         font-size: 1.45rem;
         padding: 0.125rem 0.25rem;
         border: none;
         background-color: #fff; }
-        body main section button:nth-of-type(2) {
+        body main section form button:nth-of-type(2) {
           display: none; }
-      body main section p.message {
-        width: initial;
-        padding: 0;
-        font-size: 1.57rem;
-        color: #4444ff;
-        margin-top: 0rem;
-        text-align: initial; }
-        body main section p.message.single-digit {
-          font-size: 1.65rem; }
-      body main section p.win {
-        width: initial;
-        padding: 0;
-        font-size: 2.05rem;
-        color: green;
-        margin-top: 0rem;
-        text-align: initial; }
-        body main section p.win.single-digit {
-          font-size: 2.175rem; }
-      body main section p.loss {
-        width: initial;
-        padding: 0;
-        font-size: 2rem;
-        color: red;
-        margin-top: 0rem;
-        text-align: initial; }
-      body main section p.invalid {
-        width: initial;
-        padding: 0;
-        font-size: 1.68rem;
-        color: #ff9100;
-        margin-top: 0rem;
-        text-align: initial; }
+      body main section form p {
+        position: absolute;
+        z-index: 10; }
+        body main section form p.message {
+          width: initial;
+          padding: 0;
+          font-size: 1.575rem;
+          color: #4444ff;
+          margin-top: 0rem;
+          text-align: initial; }
+          body main section form p.message.single-digit {
+            font-size: 1.65rem; }
+        body main section form p.win {
+          width: initial;
+          padding: 0;
+          font-size: 2.08rem;
+          color: green;
+          margin-top: 0rem;
+          text-align: initial; }
+          body main section form p.win.single-digit {
+            font-size: 2.2rem; }
+        body main section form p.loss {
+          width: initial;
+          padding: 0;
+          font-size: 2.025rem;
+          color: red;
+          margin-top: 0rem;
+          text-align: initial; }
+        body main section form p.invalid {
+          width: initial;
+          padding: 0;
+          font-size: 1.68rem;
+          color: #ff9100;
+          margin-top: 0rem;
+          text-align: initial; }
